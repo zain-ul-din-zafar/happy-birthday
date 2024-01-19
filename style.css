@@ -43,8 +43,18 @@ img {
   width: 40%;
   background: transparent;
   position: relative;
-  animation: balloon 3s linear;
+  animation: balloon 3s linear, rotateBalloon 3s ease-in-out infinite;
 }
+
+@keyframes rotateBalloon {
+  0%, 100% {
+    transform: rotateZ(-3deg);
+  }
+  50% {
+    transform: rotateZ(3deg);
+  }
+}
+
 
 @keyframes balloon {
   from {
