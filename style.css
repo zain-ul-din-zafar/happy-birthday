@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: rgb(255, 136, 0);
@@ -40,7 +44,7 @@ img {
 
 @keyframes balloon {
   from {
-    top: 60px;
+    top: 100px;
   }
   to {
     top: 0px;
@@ -48,13 +52,31 @@ img {
 }
 
 #icon {
-  width: 40px;
+  width: 50px;
   position: relative;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
+  animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+    scale: 1;
+  }
+  
+  50% {
+    transform: translateY(-3px);
+    scale: 1.02;
+  }
+  
+  100% {
+    transform: translateY(0px);
+    scale: 1;
+  }
 }
 
 .confetti {

@@ -23,15 +23,27 @@
         <div class="squareTen"></div>
       </div>
       <h1>Happy Birthday Ifrahim!</h1>
-      <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Balloons_PNG_Image-771009156.png?m=1541639344" alt="baloons"/>
+      <img id="ballons" src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Balloons_PNG_Image-771009156.png?m=1541639344" alt="baloons"/>
       <input type="image" id="icon" onclick="play()" src="play.png"/>
       <audio id="audio" src="song.mp3"></audio>
     </div>
 
     <script>
+
+      const $ = document.querySelector.bind(document);
+      const confetti = $(".confetti")
+      const ballons = $("#ballons")
+
+      confetti.style.opacity = 0;
+      ballons.style.opacity = 0;
+      ballons.style.animation = "none";
+      
       function play() {
         var audio = document.getElementById("audio");
         audio.play();
+        confetti.style.opacity = 1;
+        ballons.style.opacity = 1;
+        ballons.style.removeProperty("animation")
       }
     </script>
   </body>
