@@ -48,10 +48,10 @@ img {
 
 @keyframes rotateBalloon {
   0%, 100% {
-    transform: rotateZ(-3deg);
+    transform: rotateZ(-2deg);
   }
   50% {
-    transform: rotateZ(3deg);
+    transform: rotateZ(2deg);
   }
 }
 
