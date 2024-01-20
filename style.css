@@ -51,7 +51,7 @@ img {
     transform: rotateZ(-1deg);
   }
   50% {
-    transform: rotateZ(1deg);
+    transform: rotateZ(0.5deg);
   }
 }
 
