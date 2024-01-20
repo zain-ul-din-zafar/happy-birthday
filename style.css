@@ -43,7 +43,7 @@ img {
   width: 40%;
   background: transparent;
   position: relative;
-  animation: balloon 3s linear, rotateBalloon 3s ease-in-out infinite;
+  animation: balloon 3s linear, rotateBalloon 4s ease-in-out infinite;
 }
 
 @keyframes rotateBalloon {
